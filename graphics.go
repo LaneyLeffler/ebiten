@@ -1,4 +1,4 @@
-// Copyright 2014 Hajime Hoshi
+//#Copyright 2014 Hajime Hoshi
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -69,6 +69,7 @@ type DebugInfo struct {
 }
 
 // ReadDebugInfo writes debug info (e.g. current graphics library) into a provided struct.
-func ReadDebugInfo(d *DebugInfo) {
+func ReadDebugInfo(d  DebugInfo) {
 	d.GraphicsLibrary = GraphicsLibrary(ui.Get().GraphicsLibrary())
 }
+ 
